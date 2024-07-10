@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins overflow-x-hidden;
+  }
+  /* container */
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+
+  .banner {
+    @apply h-screen bg-secondary;
+  }
+
+  .readmore {
+    @apply h-screen bg-primary;
+  }
+  /* project */
+  .project__tab {
+    @apply flex justify-center;
+  }
+  .project__tab ul {
+    @apply flex gap-6 py-4;
+  }
+  .project__content {
+    @apply w-full flex flex-wrap;
+  }
+  .project__content .project__item {
+    @apply relative m-[4px] w-calc-33p33-8 overflow-hidden cursor-pointer   
+  }
+  .project__content .project__item{
+    @apply lg:w-mobile
+  }
+  .project__item img {
+    @apply object-cover block duration-300 w-full h-full; 
+  }
+  .project__item:hover img {
+    @apply scale-110 img-linear;
+  }
+  .project__item .overlay {
+    @apply absolute w-full h-full top-0 left-0 flex justify-center items-center layer-linear
+    p-1 overflow-hidden duration-500 ease-in-out text-white opacity-0;
+  }
+  .project__item:hover .overlay {
+    @apply opacity-100;
+  }
+  .overlay__text {
+    @apply text-center;
+  }
+
+  .project__tab li.active {
+    @apply text-primary;
+  }
+  .project__tab li {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .w-calc-33p33-8 {
+    width: calc(50% - 20px);
+  }
+  .w-mobile {
+    width: calc(25% - 20px);
+  }
+
+  .layer-linear {
+    background: rgba(100, 117, 15, 0.9);
+  }
+  .img-linear {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
