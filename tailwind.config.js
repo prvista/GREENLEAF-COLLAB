@@ -14,7 +14,9 @@ module.exports = {
         tertiary: "#8ba216",
         light: "#ffffff",
       },
-      
+      backgroundImage:{
+        team:"linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('../img/lawn-768316_1920.jpg')",
+      }
     },
   },
   plugins: [],

@@ -60,6 +60,55 @@
   .project__tab li {
     @apply cursor-pointer;
   }
+/* OUR TEAM */
+
+.ourTeam__text{
+  @apply max-w-[22.5rem] gap-[1.5rem] p-[2rem]  lg:h-[25rem] lg:max-w-[25rem] lg:pt-[5rem] lg:flex lg:flex-col
+}
+.ourTeam__card{
+  @apply  ml-[3rem] lg:flex  pb-[2rem]
+} 
+.ourTeam__title{
+  @apply pt-[5rem] 
+}
+.ourTeam__title p{
+  @apply pb-[2rem]
+}
+.ourTeam{
+  @apply gap-[5rem]
+}
+.ourTeam__title h2{
+  @apply lg:pb-[2rem] pt-10 pb-[2rem]
+}
+.ourTeam__card{
+  @apply lg:scale-75
+}
+  .team__members{
+    @apply ml-10  lg:grid lg:grid-cols-2  ;
+    
+  }
+.team__card.icon a{
+  @apply text-primary gap-4 ;
+}
+.team__wrapper h2 p{
+  @apply  text-light;
+}
+.team__wrapper{
+  @apply flex flex-col pb-24 ; 
+}
+/* LATEST NEWS */
+.latest__card {
+  @apply border border-gray-400  pb-6;
+}
+.latest__parent{
+  @apply grid gap-[1rem] lg:grid lg:grid-cols-3
+}
+.latest__card p{
+  @apply text-sm pt-2
+}
+.latest__card a{
+  @apply mt-5 pt-[2rem]
+}
 }
 
 @layer components {
