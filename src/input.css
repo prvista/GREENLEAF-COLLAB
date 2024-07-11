@@ -14,9 +14,165 @@
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
 
-  .banner {
-    @apply h-screen bg-secondary;
+  /* announcement */
+  .announcement{
+    @apply bg-primary text-light font-roboto py-3;
   }
+  .announcement__wrapper{
+    @apply flex flex-col gap-1
+    /* desktop */
+    lg:flex-row lg:justify-between;
+  }
+  .announcement__socials ul{
+    @apply flex flex-row gap-5 text-sm;
+  }
+  .announcement__socials ul li i{
+    @apply border-r-[1px] pr-4;
+  }
+  .announcement__socials ul li:last-child i{
+    @apply border-none;
+  }
+  /* details */
+  .details{
+    @apply py-5;
+  }
+  .details__wrapper{
+    @apply flex flex-col gap-2
+    /* desktop */
+    lg:flex-row-reverse;
+  }
+  .details__wrapper img{
+    @apply hidden
+    /* desktop */
+    lg:block;
+  }
+  .details__info{
+    @apply flex flex-row gap-4 items-center;
+  }
+  .details__info i{
+    @apply text-4xl text-primary;
+  }
+  .details__text h5{
+    @apply font-semibold;
+  }
+  .details__text p{
+    @apply text-secondary/70 font-roboto;
+  }
+  .details__text{
+    @apply flex flex-col gap-2;
+  }
+  /* header */
+  .header__nav.open{
+    @apply -right-0 duration-700 z-50 w-[18rem] h-screen;
+  }
+  .header__nav img{
+    @apply w-[12rem] pb-8;
+  }
+  .header__nav input{
+    @apply border border-gray-300 p-2 w-[14rem] rounded-sm font-normal focus:outline-blue-300 mb-3;
+  }
+  .header__nav a{
+    @apply text-gray-500 justify-between flex flex-row items-center
+  }
+  .header__nav a:hover{
+    @apply text-secondary
+  }
+  .header__nav i{
+    @apply text-sm /* text-gray-500/50*/;
+  }
+  /* toggle span side */
+  .toggle__menu--side{
+    @apply flex flex-col gap-1 relative translate-x-[13rem] -translate-y-[25rem] cursor-pointer
+    /* desktop */
+    lg:hidden;
+  }
+  .toggle__menu--side span{
+    @apply content-[*] bg-secondary w-7 h-[.2rem]
+    ease-in-out duration-700;
+  }
+  /* .toggle__menu--side.open span{
+    @apply -translate-y-[19rem];
+  } */
+  .toggle__menu--side span:first-child{
+    @apply h-[.2rem];
+  }
+  .toggle__menu--side.open span:first-child{
+    @apply relative file:h-[.2rem] -rotate-45 top-2 duration-700;
+  }
+  .toggle__menu--side.open span:nth-child(2){
+    @apply h-[.2rem] opacity-0 duration-700;
+  }
+  .toggle__menu--side.open span:last-child{
+    @apply relative h-[.2rem] rotate-45 bottom-2 duration-700;
+  }
+  /* toggle menu */
+  .toggle__menu{
+    @apply flex flex-col gap-1 cursor-pointer
+    /* desktop */
+    lg:hidden;
+  }
+  .toggle__menu span{
+    @apply content-[*] bg-secondary w-7 h-[.2rem]
+    ease-in-out duration-700;
+  }
+  /* .toggle__menu.open span{
+    @apply -translate-y-[19rem];
+  } */
+  .toggle__menu span:first-child{
+    @apply h-[.2rem];
+  }
+  .toggle__menu.open span:first-child{
+    @apply relative file:h-[.2rem] -rotate-45 top-2 duration-700;
+  }
+  .toggle__menu.open span:nth-child(2){
+    @apply h-[.2rem] opacity-0 duration-700;
+  }
+  .toggle__menu.open span:last-child{
+    @apply relative h-[.2rem] rotate-45 bottom-2 duration-700;
+  }
+  /* backdrop */
+  .backdrop{
+    @apply hidden;
+  }
+  .backdrop.open{
+    @apply block fixed left-0 h-[120vh] w-full bg-secondary/30 backdrop-blur-sm duration-700 overflow-y-hidden z-10; 
+  }
+  /* banner */
+  .banner{
+    @apply text-light;
+  }
+  .banner__card{
+    @apply h-[20rem];
+  }
+  .banner__card img{
+    @apply h-[30rem] object-cover object-center brightness-50;
+  }
+  .banner__text{
+    @apply flex flex-col -translate-y-[27rem] translate-x-5
+  }
+  .banner__text h4{
+    @apply text-2xl font-extrabold underline pb-5;
+  }
+  .banner__text h1{
+    @apply text-7xl font-extrabold leading-[5rem] pb-10;
+  }
+  .banner__button{
+    @apply relative flex flex-row justify-between -translate-y-56 opacity-0 hover:opacity-100;
+  }
+  .banner__slider{
+    @apply h-[25rem]
+  }
+  /* cta */
+  .cta__wrapper{
+    @apply flex flex-col px-5 py-10
+  }
+  .cta__wrapper p{
+    @apply pb-10
+  }
+  .cta__wrapper a{
+    @apply text-center
+  }
+
 
   /* project */
   .project{
@@ -186,6 +342,7 @@
   .img-linear {
     background: rgba(0, 0, 0, 0.5);
   }
+<<<<<<< HEAD
   .footer__x{
     border-left: 1px solid rgba(255, 255, 255, 0.10);
     border-right: 1px solid rgba(255, 255, 255, 0.10);
@@ -198,3 +355,24 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
   }
 }
+=======
+  .btn{
+    @apply py-4 px-7 bg-transparent border border-transparent rounded-md;
+  }
+  .btn.bg--light {
+    @apply bg-light text-secondary font-roboto underline text-sm font-bold duration-300 ease-in
+    hover:bg-primary hover:text-light hover:no-underline ;
+  }
+  .btn.bg--chevron {
+    @apply bg-light text-secondary duration-300 ease-in py-6 px-8 rounded-none cursor-pointer
+    hover:bg-secondary hover:text-light;
+  }
+  .btn.bg--white {
+    @apply bg-light text-tertiary py-3 font-bold duration-300 ease-in hover:bg-tertiary hover:text-white;
+  }
+  /* slider */
+  .tns-outer button{
+    @apply hidden;
+  }
+}
+>>>>>>> benedict
