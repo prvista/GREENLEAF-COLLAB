@@ -1206,7 +1206,6 @@ body{
   }
 }
 
-<<<<<<< HEAD
 .footer__wrapper{
   margin-left: auto;
   margin-right: auto;
@@ -1307,7 +1306,6 @@ body{
 
 .grid{
   display: grid;
-=======
 .fixed{
   position: fixed;
 }
@@ -1322,14 +1320,12 @@ body{
 
 .flex{
   display: flex;
->>>>>>> benedict
 }
 
 .hidden{
   display: none;
 }
 
-<<<<<<< HEAD
 .w-\[25\=rem\]{
   width: 25=rem;
 }
@@ -1344,7 +1340,6 @@ body{
 
 .gap-14{
   gap: 3.5rem;
-=======
 .w-44{
   width: 11rem;
 }
@@ -1367,14 +1362,12 @@ body{
 
 .justify-between{
   justify-content: space-between;
->>>>>>> benedict
 }
 
 .gap-4{
   gap: 1rem;
 }
 
-<<<<<<< HEAD
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(35 35 35 / var(--tw-bg-opacity));
@@ -1421,7 +1414,6 @@ body{
 
 .text-center{
   text-align: center;
-=======
 .bg-light{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1449,14 +1441,12 @@ body{
 
 .text-left{
   text-align: left;
->>>>>>> benedict
 }
 
 .font-roboto{
   font-family: Roboto Slab;
 }
 
-<<<<<<< HEAD
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1467,13 +1457,10 @@ body{
   line-height: 2.25rem;
 }
 
-=======
->>>>>>> benedict
 .font-semibold{
   font-weight: 600;
 }
 
-<<<<<<< HEAD
 .leading-7{
   line-height: 1.75rem;
 }
@@ -1524,7 +1511,6 @@ body{
     border-right: 1px solid rgba(255, 255, 255, 0.10);
   }
 }
-=======
 .text-light{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1627,4 +1613,3 @@ body{
     background-color: transparent;
   }
 }
->>>>>>> benedict

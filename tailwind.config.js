@@ -15,12 +15,9 @@ module.exports = {
         light: "#ffffff",
         pGray: "#9c9c9c;",
       },
-<<<<<<< HEAD
       backgroundImage:{
         menu:"linear-gradient(rgba(35, 35, 35, 0.94), rgba(35, 35, 35, 0.94)),  url('../img/bg-image.jpg')",
       }
-=======
->>>>>>> benedict
     },
   },
   plugins: [],
