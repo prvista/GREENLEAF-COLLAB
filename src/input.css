@@ -61,13 +61,18 @@
     @apply cursor-pointer;
   }
 /* OUR TEAM */
-
+.ourTeam:before{
+  @apply inline-block;
+}
 .ourTeam__text{
-  @apply max-w-[22.5rem] gap-[1.5rem] p-[2rem]  lg:h-[25rem] lg:max-w-[25rem] lg:pt-[5rem] lg:flex lg:flex-col
+  @apply max-w-[21.3rem] gap-[1.5rem] p-[2rem]  lg:h-[22.5rem] lg:max-w-[50rem] lg:pt-[5rem] lg:flex lg:flex-col 
 }
 .ourTeam__card{
-  @apply  ml-[3rem] lg:flex  pb-[2rem]
+  @apply  ml-[1rem] lg:flex  lg:pb-[1rem]  pb-[1rem] lg:justify-center 
 } 
+.ourTeam__card img{
+  @apply h-[26rem]
+}
 .ourTeam__title{
   @apply pt-[5rem] 
 }
@@ -78,37 +83,64 @@
   @apply gap-[5rem]
 }
 .ourTeam__title h2{
-  @apply lg:pb-[2rem] pt-10 pb-[2rem]
+  @apply lg:pb-[2rem] pt-10 pb-[1rem]
 }
 .ourTeam__card{
-  @apply lg:scale-75
+  @apply lg:scale-[.90]
 }
-  .team__members{
-    @apply ml-10  lg:grid lg:grid-cols-2  ;
-    
-  }
-.team__card.icon a{
-  @apply text-primary gap-4 ;
+.aboutService__wrapper {
+  @apply py-24 grid grid-cols-1 gap-10;
+  /* For desktop */
+  @apply lg:grid-cols-3 lg:py-20;
 }
-.team__wrapper h2 p{
-  @apply  text-light;
+/* ABOUT SERVICE */
+.aboutService__card {
+  @apply p-10 border border-gray-200 flex flex-row justify-center items-start gap-4 duration-700 ease-in-out cursor-pointer;
 }
-.team__wrapper{
-  @apply flex flex-col pb-24 ; 
+
+.aboutService__card:hover {
+  @apply bg-tertiary text-light;
 }
+
+.aboutService__card:hover i {
+  @apply text-light;
+}
+
+.aboutService__card:hover p {
+  @apply text-light;
+}
+
+.aboutService__card i {
+  @apply text-tertiary text-5xl duration-700 ease-in-out;
+}
+
+.aboutService__text p {
+  @apply font-roboto text-black/60 w-[85%] duration-700 ease-in-out;
+}
+
+.aboutService__text h4 {
+  @apply font-semibold pb-2;
+}
+
+ 
 /* LATEST NEWS */
 .latest__card {
   @apply border border-gray-400  pb-6;
 }
 .latest__parent{
-  @apply grid gap-[1rem] lg:grid lg:grid-cols-3
+  @apply grid gap-[1.5rem] lg:grid lg:grid-cols-3
 }
 .latest__card p{
   @apply text-sm pt-2
 }
 .latest__card a{
-  @apply mt-5 pt-[2rem]
+  @apply mt-5 pt-[2rem] 
 }
+/* ABOUT BANNER */
+.aboutBanner{
+  @apply bg-no-repeat bg-cover w-full bg-about
+}
+
 }
 
 @layer components {
